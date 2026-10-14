@@ -4,9 +4,18 @@ One final inference configuration for **Qwen3.5-4B on NVIDIA A10G 24 GB**:
 
 **QAD INT4 + DFlash K15 + W8g128/Triton top-4 output-head rescoring + 1,024-token drafter window. Prefix caching is OFF.**
 
-The final setting passed all three full quality thresholds and achieved a **5.092× arithmetic mean speedup against BF16 on the same vLLM 0.22.1 engine**, on the local synthetic latency workload below. This is a local measurement, not an official competition result or a universal speed guarantee.
+The final setting passed all three full quality thresholds and achieved a **5.092x arithmetic mean speedup against BF16 on the same vLLM 0.22.1 engine**, on the local synthetic latency workload below. This is a local measurement, not an official competition result or a universal speed guarantee.
 
 ## Final results
+
+| AVG SPEEDUP | SHORT (64T) | MEDIUM (2048T) | LONG (8192T) | MMLU-PRO ≥62.1% | IFEVAL ≥81.4% | GPQA-DIAMOND ≥63.0% |
+|--:|--:|--:|--:|--:|--:|--:|
+| **5.092x** | 264 ms | 1,530 ms | 2,862 ms | ✅ 0.661 | ✅ 0.819 | ✅ 0.636 |
+
+Speedup is the arithmetic mean against same-engine BF16; latencies are medians. Token counts in the headers are input lengths. Latencies are rounded to whole milliseconds and quality scores to three decimal places; pass indicators use the unrounded scores.
+
+<details>
+<summary>Detailed measurements and evaluation conditions</summary>
 
 | Workload | Input → output | Median ms | p95 ms | Output tokens/s | Same-engine BF16 speedup | Initial BF16 speedup |
 |:--|--:|--:|--:|--:|--:|--:|
@@ -24,6 +33,8 @@ The initial BF16 reference used vLLM 0.19.0. The ratio of mean latencies against
 | GPQA-Diamond, 0-shot | 198 | 0.636364 | ≥ 0.630 | Thinking ON + streaming, max 12,288 |
 
 Quality concurrency was 8; all documents were evaluated. MMLU-Pro is macro-averaged across subjects. IFEval uses strict instruction-level accuracy (683/834 instructions). No speed-only forced output length was used for quality.
+
+</details>
 
 ## Architecture
 
