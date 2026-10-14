@@ -24,7 +24,7 @@ Speedup is the arithmetic mean against same-engine BF16; latencies are medians. 
 | Long | 8,192 → 256 | 2,861.74 | 3,279.75 | 94.93 | 2.219× | 2.258× |
 | Mean of speedups | | | | | **5.092×** | **5.202×** |
 
-The initial BF16 reference used vLLM 0.19.0. The ratio of mean latencies against that reference is 3.108×, a different statistic. Maximum sampled whole-GPU memory was 20,739 MiB for latency and 20,745 MiB for quality. These are sampled observations, not allocator peaks.
+Maximum sampled whole-GPU memory was 20,739 MiB for latency and 20,745 MiB for quality. These are sampled observations, not allocator peaks.
 
 | Full evaluation | Documents | Score | Threshold | Generation |
 |:--|--:|--:|--:|:--|
