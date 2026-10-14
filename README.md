@@ -17,7 +17,7 @@ Speedup is the arithmetic mean against same-engine BF16; latencies are medians. 
 <details>
 <summary>Detailed measurements and evaluation conditions</summary>
 
-| Workload | Input → output | Median ms | p95 ms | Output tokens/s | Same-engine BF16 speedup | Initial BF16 speedup |
+| Workload | Input → output | Median ms | p95 ms | Output tokens/s | BF16 (vLLM 0.22.1) speedup | Initial BF16 (vLLM 0.19.0) speedup |
 |:--|--:|--:|--:|--:|--:|--:|
 | Short | 64 → 128 | 264.39 | 321.23 | 478.70 | 9.586× | 9.806× |
 | Medium | 2,048 → 256 | 1,530.14 | 1,820.12 | 181.73 | 3.471× | 3.541× |
