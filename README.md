@@ -12,7 +12,7 @@ The final setting passed all three full quality thresholds and achieved a **5.09
 |--:|--:|--:|--:|--:|--:|--:|
 | **5.092x** | 264 ms | 1,530 ms | 2,862 ms | ✅ 0.661 | ✅ 0.819 | ✅ 0.636 |
 
-Speedup is the arithmetic mean against same-engine BF16; latencies are medians. Token counts in the headers are input lengths. Latencies are rounded to whole milliseconds and quality scores to three decimal places; pass indicators use the unrounded scores.
+Speedup is the arithmetic mean against same-engine BF16 (vLLM 0.22.1）; latencies are medians. Token counts in the headers are input lengths. Latencies are rounded to whole milliseconds and quality scores to three decimal places; pass indicators use the unrounded scores.
 
 <details>
 <summary>Detailed measurements and evaluation conditions</summary>
