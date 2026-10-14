@@ -28,9 +28,9 @@ The initial BF16 reference used vLLM 0.19.0. The ratio of mean latencies against
 
 | Full evaluation | Documents | Score | Threshold | Generation |
 |:--|--:|--:|--:|:--|
-| MMLU-Pro, 5-shot | 12,032 | 0.660962 | ≥ 0.621 | Thinking OFF, max 2,048 |
-| IFEval, 0-shot | 541 | 0.818945 | ≥ 0.814 | Thinking OFF, max 512 |
-| GPQA-Diamond, 0-shot | 198 | 0.636364 | ≥ 0.630 | Thinking ON + streaming, max 12,288 |
+| MMLU-Pro, 5-shot | 12,032 | 0.6610 | ≥ 0.621 | Thinking OFF, max 2,048 |
+| IFEval, 0-shot | 541 | 0.8189 | ≥ 0.814 | Thinking OFF, max 512 |
+| GPQA-Diamond, 0-shot | 198 | 0.6364 | ≥ 0.630 | Thinking ON + streaming, max 12,288 |
 
 Quality concurrency was 8; all documents were evaluated. MMLU-Pro is macro-averaged across subjects. IFEval uses strict instruction-level accuracy (683/834 instructions). No speed-only forced output length was used for quality.
 
