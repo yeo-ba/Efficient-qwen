@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv*/
+.env
+*.pem
+*.key
+*.safetensors
+*.pt
+*.pth
+build-final/
+results/budget.json
+results/new-*/

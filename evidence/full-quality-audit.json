@@ -1,0 +1,141 @@
+{
+  "quality_status": "passed",
+  "tasks": {
+    "mmlu_pro": {
+      "samples": 12032,
+      "score": 0.6609624993058001,
+      "raw_sha256": "7ef1e7d82bbe1757eea4858314fad28623dbbbb9eff98892a58308235cdc8001",
+      "document_score_audit": {
+        "documents": 12032,
+        "score": 0.6609624993058001,
+        "aggregation": "subject_macro",
+        "filter": "custom-extract",
+        "groups": {
+          "mmlu_pro_biology": {
+            "documents": 717,
+            "scored_items": 717,
+            "correct_items": 604.0,
+            "score": 0.8423988842398884
+          },
+          "mmlu_pro_business": {
+            "documents": 789,
+            "scored_items": 789,
+            "correct_items": 556.0,
+            "score": 0.7046894803548795
+          },
+          "mmlu_pro_chemistry": {
+            "documents": 1132,
+            "scored_items": 1132,
+            "correct_items": 827.0,
+            "score": 0.730565371024735
+          },
+          "mmlu_pro_computer_science": {
+            "documents": 410,
+            "scored_items": 410,
+            "correct_items": 284.0,
+            "score": 0.6926829268292682
+          },
+          "mmlu_pro_economics": {
+            "documents": 844,
+            "scored_items": 844,
+            "correct_items": 649.0,
+            "score": 0.768957345971564
+          },
+          "mmlu_pro_engineering": {
+            "documents": 969,
+            "scored_items": 969,
+            "correct_items": 384.0,
+            "score": 0.39628482972136225
+          },
+          "mmlu_pro_health": {
+            "documents": 818,
+            "scored_items": 818,
+            "correct_items": 554.0,
+            "score": 0.6772616136919315
+          },
+          "mmlu_pro_history": {
+            "documents": 381,
+            "scored_items": 381,
+            "correct_items": 207.0,
+            "score": 0.5433070866141733
+          },
+          "mmlu_pro_law": {
+            "documents": 1101,
+            "scored_items": 1101,
+            "correct_items": 432.0,
+            "score": 0.3923705722070845
+          },
+          "mmlu_pro_math": {
+            "documents": 1351,
+            "scored_items": 1351,
+            "correct_items": 1106.0,
+            "score": 0.8186528497409327
+          },
+          "mmlu_pro_other": {
+            "documents": 924,
+            "scored_items": 924,
+            "correct_items": 575.0,
+            "score": 0.6222943722943723
+          },
+          "mmlu_pro_philosophy": {
+            "documents": 499,
+            "scored_items": 499,
+            "correct_items": 297.0,
+            "score": 0.5951903807615231
+          },
+          "mmlu_pro_physics": {
+            "documents": 1299,
+            "scored_items": 1299,
+            "correct_items": 972.0,
+            "score": 0.7482678983833718
+          },
+          "mmlu_pro_psychology": {
+            "documents": 798,
+            "scored_items": 798,
+            "correct_items": 575.0,
+            "score": 0.7205513784461153
+          }
+        }
+      }
+    },
+    "ifeval": {
+      "samples": 541,
+      "score": 0.8189448441247003,
+      "raw_sha256": "95192f66ee4804d5a390e3ad5317552aa606d734652f49a4dd75f0a69971a30f",
+      "document_score_audit": {
+        "documents": 541,
+        "score": 0.8189448441247003,
+        "aggregation": "scored_item_mean",
+        "filter": "none",
+        "groups": {
+          "ifeval": {
+            "documents": 541,
+            "scored_items": 834,
+            "correct_items": 683,
+            "score": 0.8189448441247003
+          }
+        }
+      }
+    },
+    "gpqa_diamond": {
+      "samples": 198,
+      "score": 0.6363636363636364,
+      "raw_sha256": "30d30b986966e99d9f819cb566e70c6a63b2ec04ded1f3e070adf11772d29bd6",
+      "document_score_audit": {
+        "documents": 198,
+        "score": 0.6363636363636364,
+        "aggregation": "scored_item_mean",
+        "filter": "flexible-extract",
+        "groups": {
+          "gpqa_diamond_cot_zeroshot": {
+            "documents": 198,
+            "scored_items": 198,
+            "correct_items": 126.0,
+            "score": 0.6363636363636364
+          }
+        }
+      }
+    }
+  },
+  "max_vram_mib_sampled": 20745.0
+}

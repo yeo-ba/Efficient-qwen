@@ -1,0 +1,140 @@
+{
+  "profile_server": {
+    "image_id": "sha256:81e64603f6e91002274f4f8160b59cfb399ce2be605d8ec571af7d98b55c21c9",
+    "command": [
+      "-m",
+      "vllm.entrypoints.openai.api_server",
+      "--model",
+      "/model",
+      "--served-model-name",
+      "efficient-qwen",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8080",
+      "--max-model-len",
+      "16384",
+      "--dtype",
+      "bfloat16",
+      "--gpu-memory-utilization",
+      "0.90",
+      "--max-num-seqs",
+      "8",
+      "--max-num-batched-tokens",
+      "4096",
+      "--reasoning-parser",
+      "qwen3",
+      "--limit-mm-per-prompt",
+      "{\"image\":0,\"video\":0}",
+      "--no-enable-prefix-caching",
+      "--seed",
+      "1234",
+      "--tokenizer",
+      "/original-tokenizer",
+      "--chat-template",
+      "/original-tokenizer/chat_template.jinja",
+      "--quantization",
+      "compressed-tensors",
+      "--speculative-config",
+      "{\"method\": \"dflash\", \"model\": \"/drafter\", \"num_speculative_tokens\": 15, \"quantization\": \"compressed-tensors\"}",
+      "--profiler-config",
+      "{\"profiler\": \"torch\", \"torch_profiler_dir\": \"/experiment/results/candidates/dflash-swa-20261012T205506508987Z/profile/traces\", \"torch_profiler_with_stack\": false, \"torch_profiler_record_shapes\": true, \"ignore_frontend\": true}"
+    ],
+    "kernel_config_sha256": null,
+    "head_config_sha256": "c9829fab79be9d40613c8dd1bd3cfe3966cc70a35d38b06a9279eb0b76933557",
+    "mounts": [
+      {
+        "Type": "bind",
+        "Source": "/home/ubuntu/projects/efficient-qwen/optimization",
+        "Destination": "/experiment",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/home/ubuntu/qwen-weights",
+        "Destination": "/original-tokenizer",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/home/ubuntu/qwen-dflash-qad",
+        "Destination": "/drafter",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/home/ubuntu/qwen-qad",
+        "Destination": "/model",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      }
+    ],
+    "gpu": "NVIDIA A10G, GPU-REDACTED, 580.105.08, 23028 MiB",
+    "started": "2026-10-12T20:55:06.707503163Z",
+    "runtime_env": [
+      "EQC_DFLASH_QUANT_PATCH=1",
+      "EQC_DFLASH_SWA_WINDOW=1024",
+      "PYTHONPATH=/experiment/runtime_plugin",
+      "EQC_OUTPUT_HEAD_CONFIG=/experiment/results/output-head022-micro/head-g32-rerank32.json",
+      "VLLM_ENABLE_CUDA_COMPATIBILITY=0",
+      "VLLM_USAGE_SOURCE=production-docker-image",
+      "VLLM_BUILD_COMMIT=0decac0d96c42b49572498019f0a0e3600f50398",
+      "VLLM_BUILD_PIPELINE=019d130e-464e-4ff7-b84b-492992c0c06b",
+      "VLLM_BUILD_URL=https://buildkite.com/vllm/release-v2/builds/2333",
+      "VLLM_IMAGE_TAG=vllm/vllm-openai:v0.22.1"
+    ]
+  },
+  "vllm": "0.22.1",
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA A10G",
+  "weight_key": "model.language_model.embed_tokens.weight",
+  "checkpoint_file": "/model/model.safetensors",
+  "checkpoint_sha256": "0df3baab330b306ca44461a156234b321bea78496723ec6d1d70e60b7c652f24",
+  "seed": 1234,
+  "m": [
+    1,
+    4,
+    8,
+    15,
+    16,
+    32,
+    64,
+    120,
+    128
+  ],
+  "bits": 8,
+  "group_sizes": [
+    32,
+    128
+  ],
+  "rerank_candidates": 32,
+  "quantization": "symmetric absmax / 127; BF16 stored scale; nearest integer, clipped [-128,127]",
+  "rerank_output": "Scatter original-BF16 candidate scores into full INT8 logits, then dense argmax; unselected logits remain approximate",
+  "timing": "CUDA graph of 20 calls, 5 warmup replays, 50 measured replays",
+  "scope": "Output head only, random activations; no end-to-end or quality claim",
+  "source_sha256": "c0fd289953e5784cb1d578aa89f9d3a1cdf566bba6c51442b359b302a020a6c4",
+  "triton_rerank_candidates": [
+    4,
+    8
+  ],
+  "triton_vocab_tiles": [
+    1024,
+    2048,
+    4096
+  ],
+  "triton_source_sha256": "9b8bed61d217b7f2141b2c2ce017b6f13c8da4460749096c3b0e9c1fcc66f82e",
+  "tie_rule": "Descending approximate score, then ascending vocabulary token ID",
+  "validation_activation_multipliers": [
+    0,
+    0.001,
+    1,
+    100
+  ]
+}

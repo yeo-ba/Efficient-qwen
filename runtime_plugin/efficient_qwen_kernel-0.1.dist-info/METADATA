@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: efficient-qwen-kernel
+Version: 0.1
+Summary: Opt-in dispatch to measured Marlin shared-memory tile configurations

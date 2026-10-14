@@ -1,0 +1,157 @@
+{
+  "checked_utc": "2026-10-12T07:10:44.058245+00:00",
+  "models": [
+    {
+      "repo": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "local": "/home/ubuntu/qwen-weights",
+      "files": [
+        {
+          "name": "chat_template.jinja",
+          "bytes": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "config.json",
+          "bytes": 3161,
+          "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "merges.txt",
+          "bytes": 3353259,
+          "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "preprocessor_config.json",
+          "bytes": 390,
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "tokenizer.json",
+          "bytes": 12807982,
+          "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+          "expected_hub_lfs_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+          "verified_against_hub": true
+        },
+        {
+          "name": "tokenizer_config.json",
+          "bytes": 16710,
+          "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "video_preprocessor_config.json",
+          "bytes": 385,
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "vocab.json",
+          "bytes": 6722759,
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+          "expected_hub_lfs_sha256": null
+        }
+      ],
+      "role": "tokenizer only; BF16 weights are not part of the final deployment"
+    },
+    {
+      "repo": "nota-ai/Qwen3.5-4B-QAD-W4A16",
+      "revision": "a67b0fedb2b39cb057da6114e656b76b52d321b4",
+      "local": "/home/ubuntu/qwen-qad",
+      "files": [
+        {
+          "name": "chat_template.jinja",
+          "bytes": 7756,
+          "sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "config.json",
+          "bytes": 14898,
+          "sha256": "68824c4a9d3abc4da67a7de135a947843ee6abc55f4546f126171cffe102bc8e",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "merges.txt",
+          "bytes": 3353259,
+          "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 4194960928,
+          "sha256": "0df3baab330b306ca44461a156234b321bea78496723ec6d1d70e60b7c652f24",
+          "expected_hub_lfs_sha256": "0df3baab330b306ca44461a156234b321bea78496723ec6d1d70e60b7c652f24",
+          "verified_against_hub": true
+        },
+        {
+          "name": "preprocessor_config.json",
+          "bytes": 390,
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "processor_config.json",
+          "bytes": 1191,
+          "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "tokenizer.json",
+          "bytes": 19989343,
+          "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+          "expected_hub_lfs_sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4",
+          "verified_against_hub": true
+        },
+        {
+          "name": "tokenizer_config.json",
+          "bytes": 1140,
+          "sha256": "a4f52c2103a685c3d9f3022b3954246fbab865abd709ac69d8b8a98f79580564",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "video_preprocessor_config.json",
+          "bytes": 385,
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+          "expected_hub_lfs_sha256": null
+        },
+        {
+          "name": "vocab.json",
+          "bytes": 6722759,
+          "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+          "expected_hub_lfs_sha256": null
+        }
+      ],
+      "role": "final target"
+    }
+  ],
+  "drafter": {
+    "repo": "nota-ai/Qwen3.5-4B-DFlash-GPTQ-W4A16",
+    "revision": "c5fb290e47e30c81d06e48b0495ec06f2560dd4e",
+    "files": [
+      {
+        "file": "README.md",
+        "size": 3841,
+        "sha256": "56ddbf973319ba47d7bf01357e73ccc1a1e4dbb781cc2562a8e4dabb0a2d5524",
+        "lfs_sha256": null
+      },
+      {
+        "file": "config.json",
+        "size": 2080,
+        "sha256": "8de18870190cb2ad8a7085677a7095abb79358d047dcc9aae002384bdce98361",
+        "lfs_sha256": null
+      },
+      {
+        "file": "model.safetensors",
+        "size": 277172584,
+        "sha256": "385e50472c9b8ec31599db0b7c5150cf836489b8656f0276237be78337307caf",
+        "lfs_sha256": "385e50472c9b8ec31599db0b7c5150cf836489b8656f0276237be78337307caf"
+      }
+    ],
+    "vendor_commit": "9454195aea3c3fec5826914ae7d34733e1bb83a0"
+  }
+}

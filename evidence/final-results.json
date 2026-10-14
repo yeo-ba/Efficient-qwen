@@ -1,0 +1,161 @@
+{
+  "configuration": "QAD INT4 + DFlash K15 + W8g128 Triton top4 BF16 rescore tile2048 + drafter window1024; prefix cache OFF",
+  "official_competition_result": false,
+  "summary": {
+    "mean_speedup_vs_original_A": 5.201828432982274,
+    "mean_speedup_vs_public_baseline": 5.20656133899882,
+    "ratio_of_mean_latencies_vs_original_A": 3.1084945596346096,
+    "mean_speedup_vs_same_engine_controls": {
+      "bf16-engine": 5.092003917737571,
+      "qad-engine": 2.372160600839528
+    }
+  },
+  "full_quality": {
+    "mmlu_pro": {
+      "samples": 12032,
+      "score": 0.6609624993058001
+    },
+    "ifeval": {
+      "samples": 541,
+      "score": 0.8189448441247003
+    },
+    "gpqa_diamond": {
+      "samples": 198,
+      "score": 0.6363636363636364
+    }
+  },
+  "quality_thresholds": {
+    "mmlu_pro": 0.621,
+    "ifeval": 0.814,
+    "gpqa_diamond": 0.63
+  },
+  "rows": [
+    {
+      "scenario": "short",
+      "cache_workload": "unshared",
+      "input_tokens": 64,
+      "output_tokens": 128,
+      "median_ms": 264.38960800442146,
+      "p95_ms": 321.2344174469763,
+      "output_tokens_per_second": 478.7024585073586,
+      "actual_input_counts": "[64]",
+      "actual_output_counts": "[128]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": 9.805802263062624,
+      "speedup_vs_same_engine_bf16-engine": 9.58617523824555,
+      "speedup_vs_public_baseline": 9.765890647096919,
+      "latency_reduction_percent": 89.80195629921185,
+      "quality_status": "passed"
+    },
+    {
+      "scenario": "medium",
+      "cache_workload": "unshared",
+      "input_tokens": 2048,
+      "output_tokens": 256,
+      "median_ms": 1530.1380299970333,
+      "p95_ms": 1820.1218865993724,
+      "output_tokens_per_second": 181.73067111979137,
+      "actual_input_counts": "[2048]",
+      "actual_output_counts": "[256]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": 3.5414163636012947,
+      "speedup_vs_same_engine_bf16-engine": 3.470679605297302,
+      "speedup_vs_public_baseline": 3.5558883534255723,
+      "latency_reduction_percent": 71.7627102455953,
+      "quality_status": "passed"
+    },
+    {
+      "scenario": "long",
+      "cache_workload": "unshared",
+      "input_tokens": 8192,
+      "output_tokens": 256,
+      "median_ms": 2861.7370834981557,
+      "p95_ms": 3279.7511335491436,
+      "output_tokens_per_second": 94.93201429686802,
+      "actual_input_counts": "[8192]",
+      "actual_output_counts": "[256]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": 2.2582666722829035,
+      "speedup_vs_same_engine_bf16-engine": 2.2191569096698625,
+      "speedup_vs_public_baseline": 2.29790501647397,
+      "latency_reduction_percent": 55.718250095366706,
+      "quality_status": "passed"
+    },
+    {
+      "scenario": "short",
+      "cache_workload": "shared",
+      "input_tokens": 64,
+      "output_tokens": 128,
+      "median_ms": 521.1827959974471,
+      "p95_ms": 607.8988394991029,
+      "output_tokens_per_second": 261.93334481494355,
+      "actual_input_counts": "[64]",
+      "actual_output_counts": "[128]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": null,
+      "speedup_vs_same_engine_bf16-engine": null,
+      "speedup_vs_public_baseline": null,
+      "latency_reduction_percent": null,
+      "quality_status": "passed"
+    },
+    {
+      "scenario": "medium",
+      "cache_workload": "shared",
+      "input_tokens": 2048,
+      "output_tokens": 256,
+      "median_ms": 1448.4582285003853,
+      "p95_ms": 1650.1760616487445,
+      "output_tokens_per_second": 181.32153244634003,
+      "actual_input_counts": "[2048]",
+      "actual_output_counts": "[256]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": null,
+      "speedup_vs_same_engine_bf16-engine": null,
+      "speedup_vs_public_baseline": null,
+      "latency_reduction_percent": null,
+      "quality_status": "passed"
+    },
+    {
+      "scenario": "long",
+      "cache_workload": "shared",
+      "input_tokens": 8192,
+      "output_tokens": 256,
+      "median_ms": 2663.0232504976448,
+      "p95_ms": 2960.088847551742,
+      "output_tokens_per_second": 96.84150685608739,
+      "actual_input_counts": "[8192]",
+      "actual_output_counts": "[256]",
+      "recorded_measurement_requests": 50,
+      "failures": 0,
+      "warmup_failures": 0,
+      "max_vram_mib_sampled": 20739.0,
+      "quality_max_vram_mib_sampled": 20745.0,
+      "speedup_vs_original_A": null,
+      "speedup_vs_same_engine_bf16-engine": null,
+      "speedup_vs_public_baseline": null,
+      "latency_reduction_percent": null,
+      "quality_status": "passed"
+    }
+  ],
+  "scope": "Local A10G, synthetic latency prompts; full quality evaluation. No universal speed guarantee. Public quality summaries refer to private raw evaluations."
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": 20,
+  "original_embedding_unchanged": true,
+  "selection_sha256": "7387e645cf6fe815949f48e08d9072e4a7ea99675d26fdf4271f92fbdfdd0af4",
+  "runtime_source_sha256": "8e93bbdfac8a85d837d8adf5716b0546c2130fc341200c262a9b3d40b4738b84",
+  "triton_source_sha256": "9b8bed61d217b7f2141b2c2ce017b6f13c8da4460749096c3b0e9c1fcc66f82e",
+  "checkpoint_sha256": "0df3baab330b306ca44461a156234b321bea78496723ec6d1d70e60b7c652f24",
+  "vllm": "0.22.1",
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA A10G",
+  "max_allocated_bytes": 7859960320,
+  "scope": "Runtime kernel implementation, not full model quality or end-to-end speed",
+  "full_quality_passed": null
+}

@@ -1,0 +1,13 @@
+{
+  "experiments_file": "results/output-head-fusion022-micro/measurements/experiments.jsonl",
+  "experiments_sha256": "e9798a8a8bc19f1451ce742fa8a645faa46990db094a6168a20e56e58668584f",
+  "group_size": 128,
+  "mode": "int8_triton_top4_bf16_rerank",
+  "block": 2048,
+  "triton_source_sha256": "9b8bed61d217b7f2141b2c2ce017b6f13c8da4460749096c3b0e9c1fcc66f82e",
+  "vllm_version": "0.22.1",
+  "image_id": "sha256:81e64603f6e91002274f4f8160b59cfb399ce2be605d8ec571af7d98b55c21c9",
+  "checkpoint_sha256": "0df3baab330b306ca44461a156234b321bea78496723ec6d1d70e60b7c652f24",
+  "full_quality_passed": null,
+  "selection_reason": "Fastest observed M=1/15/16 tile; all nine shapes and four activation magnitudes passed independent selection/rescoring checks. Group size and candidate count are explicit head-method changes; full model quality remains required."
+}

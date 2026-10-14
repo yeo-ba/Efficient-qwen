@@ -1,0 +1,3 @@
+[vllm.general_plugins]
+efficient_qwen_kernel = efficient_qwen_kernel:register
+efficient_qwen_head = efficient_qwen_head:register

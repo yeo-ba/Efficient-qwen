@@ -1,0 +1,138 @@
+{
+  "scope": "One final deployment configuration only",
+  "gpu_experiments_rerun_for_publication": false,
+  "cpu_release_tests_passed": 3,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 117,
+      "sha256": "02c596d17ff5fd53486d97034d730e969a5f1764acd184f692d8e1355b4b0730"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6442,
+      "sha256": "51d248d7a7617aeee018be9c9379f9bfc807478392c121ac88a9cc9a0f2e9a29"
+    },
+    {
+      "path": "REPRODUCING.md",
+      "bytes": 3593,
+      "sha256": "69248301f87ade8b2f22e6544aed2848f6291af5d16b64d2f2bafbb4ea817b91"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1107,
+      "sha256": "a9f8be4f578421636fe28a5483ddddb9010dfa8512bc900b39482020c9902001"
+    },
+    {
+      "path": "budget.py",
+      "bytes": 1270,
+      "sha256": "ff46f561a3eceefd5015760691b7b26507a36cd7ed838be0c41b4fbbc2855bfa"
+    },
+    {
+      "path": "docker/Dockerfile.dflash",
+      "bytes": 420,
+      "sha256": "97c1db3e7c261759367fd5f2f44ef2dc86461a54c44e07f3182461c780e67d87"
+    },
+    {
+      "path": "evidence/final-results.csv",
+      "bytes": 1324,
+      "sha256": "ef30e6eafae44308f71973200c3071c7fafc83047bb1586d4ab40cadb74b3816"
+    },
+    {
+      "path": "evidence/final-results.json",
+      "bytes": 5505,
+      "sha256": "688d3a667d459317424a209645f72b94bbe677e6ecebefc907c211882b65857c"
+    },
+    {
+      "path": "evidence/full-quality-audit.json",
+      "bytes": 4186,
+      "sha256": "f180dd740a3acc685dd0d9aca59af8e860a40d8c4a3828fe95e8e2806f660298"
+    },
+    {
+      "path": "evidence/latency-shared.jsonl",
+      "bytes": 72795,
+      "sha256": "d968f7c19731dba194515eacecd0ca14d4a80db80078ed966038ca1285103777"
+    },
+    {
+      "path": "evidence/latency-unshared.jsonl",
+      "bytes": 73140,
+      "sha256": "9ca825ee26ddb398833e9710aca85d73486405c9883a21e2aea885316d2df0d1"
+    },
+    {
+      "path": "kernels/head_rerank.py",
+      "bytes": 3018,
+      "sha256": "9b8bed61d217b7f2141b2c2ce017b6f13c8da4460749096c3b0e9c1fcc66f82e"
+    },
+    {
+      "path": "latency.py",
+      "bytes": 9665,
+      "sha256": "ff747d62e9a1d9a51e8e8e749e851179637b7dd2b0da7e5ba6a0cf264637b77d"
+    },
+    {
+      "path": "models.json",
+      "bytes": 5595,
+      "sha256": "8ba5290834d62075007460637ae60a69f5af9e567f691cad7f51d92b550cd274"
+    },
+    {
+      "path": "quality.py",
+      "bytes": 18465,
+      "sha256": "b01408ddee06833018fba2845ebad4191ff3069bbf45e4f099462de7ae1f1b22"
+    },
+    {
+      "path": "recorded-final.json",
+      "bytes": 7795,
+      "sha256": "fa759d39b9613204d62a06191b3c1bc9ab7a4cbee33a15dfc433894b41547277"
+    },
+    {
+      "path": "results/output-head-fusion022-micro/head-g128-triton4-b2048.json",
+      "bytes": 854,
+      "sha256": "7387e645cf6fe815949f48e08d9072e4a7ea99675d26fdf4271f92fbdfdd0af4"
+    },
+    {
+      "path": "results/output-head-fusion022-micro/head-g128-triton4-b2048.runtime.json",
+      "bytes": 673,
+      "sha256": "5895ee6b149d1b5550b969815289bd2e1e1667e428088158403c66541c0c15d8"
+    },
+    {
+      "path": "results/output-head-fusion022-micro/measurements/config.json",
+      "bytes": 4330,
+      "sha256": "5074773905b9191b4441cc70fd0b0f37c547b6a0a815d7cdb971a3a694454a07"
+    },
+    {
+      "path": "results/output-head-fusion022-micro/measurements/experiments.jsonl",
+      "bytes": 321950,
+      "sha256": "e9798a8a8bc19f1451ce742fa8a645faa46990db094a6168a20e56e58668584f"
+    },
+    {
+      "path": "run_final.py",
+      "bytes": 3473,
+      "sha256": "2d29d5b6bd0269d3d888c4a99b8974b2202b267829b1a496497646b66eecdbaa"
+    },
+    {
+      "path": "runtime_plugin/efficient_qwen_head.py",
+      "bytes": 8313,
+      "sha256": "8e93bbdfac8a85d837d8adf5716b0546c2130fc341200c262a9b3d40b4738b84"
+    },
+    {
+      "path": "runtime_plugin/efficient_qwen_kernel-0.1.dist-info/METADATA",
+      "bytes": 141,
+      "sha256": "83894e5c131dda36d3ee2fad5d928537eac651f3e26e0a4409550c9b96b37563"
+    },
+    {
+      "path": "runtime_plugin/efficient_qwen_kernel-0.1.dist-info/entry_points.txt",
+      "bytes": 129,
+      "sha256": "d8c9531baa8dd5354dcd0c887f2f81e3404b9c0b059112e4f8e24f0855d2f99d"
+    },
+    {
+      "path": "runtime_plugin/efficient_qwen_kernel.py",
+      "bytes": 6716,
+      "sha256": "1959700867ef6fc6a6c8387dd3a06fbb250038d5cfbd77d87a152ce5a5a8ed7a"
+    },
+    {
+      "path": "tests/test_final.py",
+      "bytes": 3233,
+      "sha256": "0e5453b73a0723953b6f9cc1d48c0e86c9f5e941338ed9f4622ffef6e9a1e88f"
+    }
+  ],
+  "manifest_self_excluded": true
+}

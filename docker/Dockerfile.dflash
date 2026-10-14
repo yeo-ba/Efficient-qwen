@@ -1,0 +1,8 @@
+FROM vllm/vllm-openai@sha256:55c9bcee9fc66644b139fddae8a7a03e4c0c8a25ab5c64b0ce614554a8abf5d5
+
+# The build context is generated from the pinned, reviewed vendor checkout.
+COPY plugin /opt/efficient-qwen-plugin
+RUN python3 -m pip install --no-deps --no-build-isolation /opt/efficient-qwen-plugin
+
+# Plugin switches stay off unless a recorded experimental command enables them.
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
